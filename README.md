@@ -8,12 +8,11 @@ Tipo de Cambio del Banco BAC Credomatic (https://www.baccredomatic.com/)
 
 ## Example
 
-    import { ExchangeRateDollar } from 'exchange-rates-bac-dollar';
-    import { CR } from 'exchange-rates-bac-dollar/helper';
+    import { ExchangeRateDollar, CR } from 'exchange-rates-bac-dollar';
 
     const exchange = ExchangeRateDollar(CR);
 
-## Response
+## Output
 
     {
       buy: 687.00,
@@ -22,10 +21,10 @@ Tipo de Cambio del Banco BAC Credomatic (https://www.baccredomatic.com/)
 
 ## Countries
 
-    CR | 'Costa Rica';
-    SV | 'El Salvador';
-    GT | 'Guatemala';
-    HN | 'Honduras';
-    NI | 'Nicaragua';
-    PA | 'Panamá';
-    CL | 'Colombia';
+    CR | 'Costa Rica'
+    SV | 'El Salvador'
+    GT | 'Guatemala'
+    HN | 'Honduras'
+    NI | 'Nicaragua'
+    PA | 'Panamá'
+    CL | 'Colombia'
