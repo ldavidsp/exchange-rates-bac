@@ -1,17 +1,13 @@
 {
 	"compilerOptions": {
 		"target": "es2015",
-		"lib": [ "es2019" ],
 		"module": "commonjs",
+		"outDir": "lib",
+		"downlevelIteration": true,
+		"esModuleInterop": true,
+		"moduleResolution": "node",
 		"strict": true,
 		"noUnusedLocals": true,
-		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
-		"declaration": true,
-		"outDir": "./lib",
-		"moduleResolution": "node",
-		"resolveJsonModule": true,
-	},
-	"include": ["src"],
-	"exclude": ["node_modules", "**/__tests__/*"]
+	}
 }

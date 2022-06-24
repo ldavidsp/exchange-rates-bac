@@ -1,14 +1,15 @@
 {
   "name": "exchange-rates-bac-dollar",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Exchange Rates from BAC bank",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json"
+  "author": "Luis Solorzano",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ldavidsp/exchange-rates-bac/issues"
   },
+  "homepage": "https://github.com/ldavidsp/exchange-rates-bac",
   "repository": {
     "type": "git",
     "url": "https://github.com/ldavidsp/exchange-rates-bac.git"
@@ -18,20 +19,21 @@
     "exchange",
     "rates"
   ],
-  "author": "Luis Solorzano",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/ldavidsp/exchange-rates-bac/issues"
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
   },
-  "homepage": "https://github.com/ldavidsp/exchange-rates-bac",
   "dependencies": {
     "aaxios": "^0.18.1",
     "axios": "^0.27.2",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
+    "@types/node": "^18.0.0",
     "@types/xml2js": "^0.4.11",
     "prettier": "^2.7.1",
+    "ts-node": "^10.8.1",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.7.4"
