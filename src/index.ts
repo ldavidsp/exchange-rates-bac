@@ -1,11 +1,10 @@
 import {parseString} from 'xml2js';
-import {AxiosResponse} from "axios";
 import {ExchangeRateBac} from "./entity/ExchangeRateBac";
 import {axiosInstance} from "./axios/axiosInstance";
 
 export const ExchangeRateDollar = (selectedCountry: string): Promise<ExchangeRateBac> => {
   return new Promise((resolve, reject) => {
-    axiosInstance.get('/exchangerate/showXmlExchangeRate.do').then((response: AxiosResponse) => {
+    axiosInstance.get('/exchangerate/showXmlExchangeRate.do').then(response => {
       parseString(response.data, (err, xmlResult) => {
         if (err) {
           reject(err);
@@ -38,3 +37,4 @@ export const Country = {
   PA: 'Panamá',
   CL: 'Colombia'
 }
+

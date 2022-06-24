@@ -1,17 +1,24 @@
 {
 	"compilerOptions": {
-		"target": "es2015",
-		"module": "commonjs",
-		"declaration": true,
+		"rootDir": "./",
+		"baseUrl": "./",
 		"outDir": "./lib",
-		"strict": true,
-		"moduleResolution": "node",
-		"resolveJsonModule": true,
+		"target": "es2017",
+		"module": "es2020",
 		"lib": [
-			"es2015",
+			"es2020",
 			"dom"
-		]
+		],
+		"sourceMap": true,
+		"experimentalDecorators": true,
+		"declaration": true,
+		"moduleResolution": "node",
+		"strict": true,
+		"allowJs": true,
+		"checkJs": false,
+		"noImplicitAny": false,
 	},
-	"include": ["src"],
-	"exclude": ["node_modules", "**/__tests__/*"]
+	"exclude": [
+		"node_modules",
+	]
 }
