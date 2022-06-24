@@ -1,4 +1,5 @@
 # exchange-rates-bac
+
 Tipo de Cambio del Banco BAC Credomatic (https://www.baccredomatic.com/)
 
 ## Install
@@ -15,11 +16,12 @@ Tipo de Cambio del Banco BAC Credomatic (https://www.baccredomatic.com/)
 ## Response
 
     {
-			buy: 687.00,
-			sale: 701.00
+      buy: 687.00,
+      sale: 701.00
     }
 
 ## Countries
+
     CR | 'Costa Rica';
     SV | 'El Salvador';
     GT | 'Guatemala';
