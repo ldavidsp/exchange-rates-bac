@@ -8,9 +8,9 @@ Tipo de Cambio del Banco BAC Credomatic (https://www.baccredomatic.com/)
 
 ## Example
 
-    import { ExchangeRateDollar, CR } from 'exchange-rates-bac-dollar';
+    import { ExchangeRateDollar, Country } from 'exchange-rates-bac-dollar';
 
-    const exchange = ExchangeRateDollar(CR);
+    const exchange = ExchangeRateDollar(Country.CR);
 
 ## Output
 
