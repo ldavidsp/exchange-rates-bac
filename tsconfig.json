@@ -1,26 +1,16 @@
 {
 	"compilerOptions": {
-		"rootDir": "./",
-		"baseUrl": "./",
-		"outDir": "./lib",
-		"target": "es2017",
-		"module": "es2020",
-		"lib": [
-			"es2020",
-			"dom"
-		],
-		"experimentalDecorators": true,
 		"declaration": true,
+		"strictNullChecks": true,
+		"target": "es5",
+		"outDir": "dist",
+		"module": "commonjs",
 		"moduleResolution": "node",
-		"strict": true,
-		"allowJs": true,
-		"checkJs": false,
-		"noImplicitAny": false,
+		"sourceMap": true,
+		"lib": ["es2015", "dom"],
+		"rootDir": "src",
+		"noImplicitAny": false
 	},
-	"include": [
-		"src/**/*"
-	],
-	"exclude": [
-		"node_modules",
-	]
+	"include": ["src/**/**/*.ts"],
+	"exclude": ["node_modules", "dist"]
 }
