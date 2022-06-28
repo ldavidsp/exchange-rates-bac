@@ -1,9 +1,9 @@
 {
   "name": "exchange-rates-bac-dollar",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "Exchange Rates from BAC bank",
   "main": "./dist/index.js",
-  "types": "./declarations/index.d.ts",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "author": "Luis Solorzano",
   "license": "Apache-2.0",
