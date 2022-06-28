@@ -1,4 +1,3 @@
-import {parseString} from 'xml2js';
 import {ExchangeRateBac} from "./entity/ExchangeRateBac";
 import {axiosInstance} from "./axios/axiosInstance";
 
