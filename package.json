@@ -1,9 +1,10 @@
 {
   "name": "exchange-rates-bac-dollar",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Exchange Rates from BAC bank",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./declarations/index.d.ts",
+  "type": "module",
   "author": "Luis Solorzano",
   "license": "Apache-2.0",
   "bugs": {
@@ -28,6 +29,7 @@
     "axios": "^0.27.2"
   },
   "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
     "@types/node": "^18.0.0",
     "prettier": "^2.7.1",
     "ts-node": "^10.8.1",

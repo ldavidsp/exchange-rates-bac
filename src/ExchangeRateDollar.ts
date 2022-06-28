@@ -7,7 +7,7 @@ export function ExchangeRateDollar(selectedCountry: string): Promise<ExchangeRat
 			const parser = new DOMParser();
 			const xml = parser.parseFromString(response.data, "application/xml");
 			const countries = xml.querySelectorAll("country");
-			countries.forEach(item => {
+			countries.forEach((item) => {
 				const country = item.getElementsByTagName("name")[0].textContent
 				if (selectedCountry === country) {
 					const buyRateUSD = String(item.getElementsByTagName("buyRateUSD")[0].textContent)

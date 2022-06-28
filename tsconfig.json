@@ -1,16 +1,15 @@
 {
+	"extends": "@tsconfig/node16/tsconfig.json",
+	"include": ["src/**/*"],
+	"exclude": ["node_modules"],
 	"compilerOptions": {
 		"declaration": true,
-		"strictNullChecks": true,
-		"target": "es5",
+		"declarationDir": "declarations",
+		"allowJs": true,
+		"checkJs": true,
 		"outDir": "dist",
-		"module": "commonjs",
-		"moduleResolution": "node",
-		"sourceMap": true,
-		"lib": ["es2015", "dom"],
-		"rootDir": "src",
-		"noImplicitAny": false
-	},
-	"include": ["src/**/**/*.ts"],
-	"exclude": ["node_modules", "dist"]
+		"lib": [
+			"dom"
+		]
+	}
 }
