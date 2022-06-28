@@ -1,3 +1,4 @@
+import { ExchangeRateBac } from "./entity/ExchangeRateBac";
 export declare const ExchangeRateDollar: (selectedCountry: string) => Promise<ExchangeRateBac>;
 export declare const Country: {
     NI: string;
@@ -8,11 +9,3 @@ export declare const Country: {
     PA: string;
     CL: string;
 };
-
-export declare class ExchangeRateBac {
-    buy: number;
-    sale: number;
-}
-
-export declare const axiosInstance: import("axios").AxiosInstance;
-
